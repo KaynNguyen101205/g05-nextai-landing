@@ -16,8 +16,8 @@ export default function Hero() {
 
         <p className="hero__subtitle">
           Transparent, usage-based pricing for the Odyssey 3 and Odyssey 3.5 models —
-          every product rated, billed, taxed, and reconciled inside BRM with a clean
-          zero balance.
+          every product rated, billed, taxed, and reconciled inside BRM — with
+          payments posted and rated usage reflected in the outstanding balance.
         </p>
 
         <div className="hero__actions">

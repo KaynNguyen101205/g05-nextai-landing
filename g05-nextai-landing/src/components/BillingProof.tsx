@@ -53,7 +53,8 @@ export default function BillingProof() {
             </tbody>
           </table>
           <p className="reconcile__note">
-            Account settles to a clean zero balance after cash payment.
+            Payments were posted successfully; additional BRM-rated usage and charges
+            remain as the current outstanding balance.
           </p>
         </div>
       </div>

@@ -307,7 +307,7 @@ export const taxRules: TaxRule[] = [
   },
   {
     label: 'Token reconcile',
-    detail: 'Grant and usage net to zero: −5400 + 5400 = 0.',
+    detail: 'Grant and usage net to zero: −10,800 + 10,800 = 0.',
   },
 ];
 
@@ -333,7 +333,7 @@ export interface ProofMetric {
 
 export const proofMetrics: ProofMetric[] = [
   { label: 'Products validated', value: '12 / 12' },
-  { label: 'Accounts paid', value: '12 / 12' },
+  { label: 'Accounts with payment posted', value: '12 / 12' },
 ];
 
 export interface ReconcileRow {
@@ -343,10 +343,10 @@ export interface ReconcileRow {
 }
 
 export const reconciliation: ReconcileRow[] = [
-  { label: 'Total USD charges', value: formatUSD(1016.93), kind: 'charge' },
-  { label: 'Cash payments', value: `-${formatUSD(1016.93)}`, kind: 'payment' },
-  { label: 'Token grant/usage reconcile', value: '-5400 + 5400 = 0', kind: 'token' },
-  { label: 'Final due', value: formatUSD(0), kind: 'total' },
+  { label: 'Total USD charges', value: formatUSD(55797.49), kind: 'charge' },
+  { label: 'Cash payments posted', value: `-${formatUSD(1686.5)}`, kind: 'payment' },
+  { label: 'Token grant/usage reconcile', value: '-10,800 + 10,800 = 0', kind: 'token' },
+  { label: 'Current outstanding balance', value: formatUSD(54110.99), kind: 'total' },
 ];
 
 // Headline stats reused by the Hero proof cards.
@@ -357,6 +357,6 @@ export interface ProofStat {
 
 export const heroStats: ProofStat[] = [
   { label: 'Products validated', value: '12 / 12' },
-  { label: 'Total USD charges', value: formatUSD(1016.93) },
-  { label: 'Final due', value: formatUSD(0) },
+  { label: 'Total USD charges', value: formatUSD(55797.49) },
+  { label: 'Current outstanding balance', value: formatUSD(54110.99) },
 ];
